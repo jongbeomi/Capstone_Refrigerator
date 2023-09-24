@@ -1,90 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="container">
         
-        <!-- 상단 네비 -->
-        <div class="nav">
-            <ul>
-                <li>
-                    <a href="index.html"><img src="img/냉장고 로고_하얀색.png" alt="로고"></a>
-                </li>
-                <li class="d">
-                    <a href="#">냉장고</a>
-                </li>
-                <li>
-                    <a href="#">로그인</a>
-                </li>
-            </ul>
-        </div>
-
-       <!--메인 이미지 및 텍스트트-->
-        <div class="image-container">
-            <img src="img/냉장고.png" alt="메인 이미지">
-            <!-- 텍스트 -->
-            <div class="image-text">
-                <p class="jemok">
-                    냉장고를 부탁해<br>
-                    온라인 냉장고 식품 관리 서비스를 활용해보세요.
-                </p>
+        <!-- 메인 -->
+        <div class="main"> 
+            
+            <!-- 상단 메뉴바 -->
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="img/logo_refrigerator_white.png" width="50px" alt="logo-main"></li>
+                        </a>
+                    <li><a href="main.html">부탁해</a></li>
+                    <li><a href="login.html">로그인</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
 
-    <!-- 두번째 박스 -->
-    <div class="second_box">
-        <div>
-            <video autoplay loop width="500px">
-                <source src="img/영수증.mp4">
+            <!-- 메인이미지 안 텍스트 -->
+            <p class="main-text">
+                냉장고를 부탁해 <br>
+                온라인 냉장고 식품 관리 서비스 활용해보세요.
+            </p>
+        </div>
+
+        <!-- 첫번째 박스 -->
+        <div class="box">
+            <div class="box-text-container">
+                <img src="img/img_scan.png">
+                <p>가장 쉬운 상품 입력</p>
+                <p>영수증을 통해 냉장고에 들어갈 식품을 쉽게 등록하세요.</p>
+                <p>저희 냉장고를 부탁해는 'OCR 문자 인식' 시스템을 활용해 영수증을 스켄하여 냉장고에 들어갈 상품만 추출 후 자동으로 상품을 입력합니다.</p>
+            </div>
+            <video autoplay loop>
+                <source src="img/video_receipt.mp4">
             </video>
-
-            <img src="img/scan.png" width="76px" height="76px">
-            <p>가장 쉬운 상품 입력</p>
-            <P>영수증 이미지를 통해 냉장고에 들어갈 상품을 쉽게 등록하세요</P>
         </div>
-    </div>
 
-    <!-- 세번째 박스 -->
-    <div class="third_box">
-        <p>Function</p>
-        
-        <div class="icon">
-            <div class="icon_box_1">
-                <img src="img/아이콘_냉장고.png" alt="냉장고 아이콘">
-                <p>온라인 냉장고</p>
-            </div>
-            <div class="icon_box_2">
-                <img src="img/icon_종.png" alt="종 아이콘">
-                <p>유통기한 알림</p>
-            </div>
-            <div class="icon_box_1">
-                <img src="img/icon_ai.png" alt="ai 아이콘">
-                <p>AI 레시피 추천</p>
+        <!-- 두번째 박스 -->
+        <div class="box01">
+            <p>Function</p>
+            <div class="box01-text-container">
+                <div class="box01-function">
+                    <img src="img/icon_refrigerator.png">
+                    <p>온라인으로 냉장고에 있는 식품들을 관리할 수 있습니다.</p>
+                </div>
+                <div class="box01-function01">
+                    <img src="img/icon_bell.png">
+                    <p>유통기한이 지나기 전에 알림을 받아 음식물 쓰레기를 줄일 수 있습니다.</p>
+                </div>
+                <div class="box01-function02">
+                    <img src="img/icon_ai.png">
+                    <p>냉장고 안에 있는 음식물들을 기반으로 AI가 추천하는 요리 레시피를 추천받을 수 있습니다.</p>
+                </div>
             </div>
         </div>
 
-        <!-- 아무거나 채워야 함 -->
+        <!-- 세번째 박스 -->
+        <div class="box02"> 
+            <p>냉장고를 부탁해로 스마트한 냉장고를 만나보세요</p>
+            <button><a href="login.html">START !</a></button>
+        </div>
 
-    </div>
-
-    <!-- 네번째 박스 -->
-    <div class="fourth_box">
-        <!-- 유통기한 알림 서비스 관련된 컨텐츠 및 시작(로그인) 버튼 -->
-    </div>
-
-    <!-- 푸터부분 -->
-    <div class="footer">
-
+        <!-- 푸터 -->
+        <div class="footer"> FOOTER </div>
     </div>
     
 </body>

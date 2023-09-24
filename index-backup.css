@@ -1,0 +1,129 @@
+/*바딩*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color:#000;
+}
+
+/*네비*/
+.nav {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    flex-shrink: 1;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.nav a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    transition: color 0.2s;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+/* 네비 안 로고 */
+.nav img {
+    width: 100px;
+    height: 150px;
+    margin-left: -60px;
+    margin-top: -20px;
+}
+.d {
+    margin-left: 55vw;
+}
+/* 메인 이미지랑 텍스트 */
+.image-container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 이미지 ㅇㄴ 텍스트 스타일 */
+.image-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    padding: 10px;
+    color: white;
+    font-size: 3vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.jemok {
+    margin-bottom: -5px;
+}
+
+.icon img {
+    width: 150px;
+    height: 150px;
+}
+
+/* 두번쨰 박스 css */
+
+/* 비디오 스타일 */
+.second_box video { 
+    margin-top: 10px;
+    margin-left: 7%;
+    padding-right: -20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.second_box_text{
+    float: left;
+    margin-left: 55%;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 200px;
+}
+
+.second_box {   
+    margin-bottom: 650px;
+}
+
+.text_1 {
+    display: flex; /* Flexbox를 사용하여 요소들을 가로로 배치 */
+    align-items: center; /* 요소들을 수직으로 중앙 정렬 */
+}
+
+/* 이미지 스타일 */
+.second_box_text img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; /* 이미지와 텍스트 사이의 간격을 조절 */
+}
+
+.text_1 .one {
+    font-size: 42px;
+}
+
+.text_two {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
