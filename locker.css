@@ -66,7 +66,6 @@
 body {
     background-color: #f0f0f0; 
     color: #333; 
-    font-family: 'Noto Sans KR', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,12 +74,15 @@ body {
 }
 
 h2 {
-    color: green;
+    color: black;
     margin-bottom: 2vw;
 }
 
 hr {
     border-color: green; 
+    border-width: 0.1vw;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
 }
 
 form {
