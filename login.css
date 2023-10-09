@@ -35,15 +35,19 @@
 }
 .inform{
     list-style:none;
-    margin-left:20%;
+    margin-left:14%;
     padding-top: 8%;
+    background-color:#fff;
+}
+.inform li{
+    padding-top: 5vw;
     background-color:#fff;
 }
 .inform label{
     background-color:#fff;
 }
 .login-ID{
-    width: 260px;
+    width: 320px;
     height: 30px;
     border-top: none;
     border-left: none;
@@ -52,7 +56,7 @@
     background-color:#fff;
 }
 .login-pw{
-    width: 260px;
+    width: 320px;
     height: 30px;
     border-top: none;
     border-left: none;
@@ -68,9 +72,12 @@
 }
 .add li{
     float: left;
-    margin-left: 23%;
+    margin-left: 22%;
+    margin-top: 5px;
+    
 }
 .add li a{
+    background-color:#fff;
     text-decoration: none; 
     color: black;
     
@@ -82,7 +89,7 @@
 /*     버튼     */
 .login-btn{
     margin-left: 20%;
-    margin-top: 50%;
+    margin-top: 20%;
     border-radius: 20px;
     width:22svw;
     height: 3vw;

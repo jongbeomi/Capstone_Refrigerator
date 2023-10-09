@@ -219,10 +219,20 @@
    width: 100%;
     height: 110px;
     bottom: 0px;
-    position:absolute;
 }
 #wrap{
     min-height: 100vh;
     position:relative;
     width:100%;
+}
+.footer-all{
+    background-color: red;
+    position: absolute;
+}
+.section{
+    padding-bottom: 110px;
+}
+.footer-social li a{
+    text-decoration: none; 
+    color: black;
 }
