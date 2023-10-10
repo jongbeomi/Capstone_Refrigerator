@@ -226,13 +226,31 @@
     width:100%;
 }
 .footer-all{
-    background-color: red;
-    position: absolute;
+    margin-top: 100vh;
+    position: absolute; 
+}
+address{
+    display: block;
+}
+.bar{
+    width: 1px;
+    height: 10px;
+    display: inline-block;
+    line-height: 10px;
+    margin: 0 6px;
+    vertical-align: baseline;
+}
+.footer-text li{
+    float: left;
 }
 .section{
     padding-bottom: 110px;
 }
+/* 아이콘만 */
 .footer-social li a{
     text-decoration: none; 
     color: black;
+}
+.footer-social i{
+    size:50vw;
 }
