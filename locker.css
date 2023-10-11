@@ -52,6 +52,7 @@
 
 .main {
     position: relative;
+    margin-top: 25%;
 }
 
 .main-text {
@@ -79,7 +80,7 @@ h2 {
 }
 
 hr {
-    border-color: green; 
+    border-color: #217542; 
     border-width: 0.1vw;
     margin-bottom: 5vh;
     margin-top: 2vh;
@@ -90,6 +91,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 5%;
 }
 
 table {
@@ -99,7 +101,7 @@ table {
 }
 
 th {
-    background-color: green; 
+    background-color: #217542; 
     color: #fff; 
 }
 
@@ -118,7 +120,7 @@ input[type="checkbox"] {
 }
 
 input[type="button"] {
-    background-color: green; 
+    background-color: #217542; 
     color: #fff; 
     border: none;
     border-radius: 5px;
@@ -129,7 +131,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: darkgreen; 
+    background-color: #217542; 
 }
 
 

@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <link href="locker.css" rel="stylesheet">
+    <link href="edit.css" rel="stylesheet">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>데이터 확인창</title>
-<!-- 아직 css , js 작업 전
+	<!-- 아직 css , js 작업 전
   <link rel="stylesheet" href="css/accounttransfer.css" type="text/css" media="screen" />
--->	
+	-->	
 </head>
 <body>
 
@@ -39,9 +39,9 @@
                 </ul>
 			</div>
         </div>
-	<hr>
+		<hr>
 
-	<div style="text-align: center;">
+	<div style="text-align: center; ">
 	<H2>영수증 스캔 결과</H2>
 
 	<!-- 영수증 스캔 결과 폼 -->
@@ -49,7 +49,8 @@
 
 		<input type="hidden" name="mode" value="mode">
 		<input type="hidden" name="id" value="0">
-	
+		<input type="hidden" name="checkbox" value="0" >
+		<input type="hidden" name="id" value="id">
 		<table>
 
 			<tr>
@@ -57,17 +58,19 @@
 				<th>상품명</th>
 				<th>구매 날짜</th>
 				<th>유통기한</th>
+				<th>삭제</th>
 			</tr>
 			<tr>
-				<td><input type="text" name="no" value="${i.no}" size = "10" readonly></td>
-				<td><input type="text" name="foodname" value="${i.foodname}" size = "20" readonly></td>
-	 			<td><input type="date" name="buydate" value="${i.buydate}" size = "20" readonly></td>
-				<td><input type="date" name="expirydate" value="${i.expirydate}" size = "20" readonly></td> 
+				<input type="hidden" name="id" value="i.id" >
+				<td><input type="text" name="no" value="i.no" ></td>
+				<td><input type="text" name="foodname" value="i.foodname" ></td>
+	 			<td><input type="date" name="buydate" value="i.buydate"  ></td>
+				<td><input type="date" name="expirydate" value="i.expirydate" ></td> 
+				<td><input type="checkbox" name="checkbox" value="i.no"  ></td> 
 			</tr>			
-		
+			
+			
 		</table>
-
-		<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
@@ -84,9 +87,14 @@
 			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+			<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+			
 		
-		<input type="button" value="수정하기" onClick="edit_open()">
+		<input type="button" value="완료 " onclick=""> 
+		<input type="button" value="삭제하기 " onclick="">
+		<input type="button" value="수정 " onclick="">
 	</form>
+	
 	</div>
 
 </body>

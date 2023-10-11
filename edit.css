@@ -29,20 +29,20 @@
 
 .nav-text01 {
     position: absolute;
-    top: 8vh;
+    top: 9vh;
     right: 10vw;
 }
 
 .nav-text02 {
     position: relative;
-    top: 8vh;
+    top: 9vh;
     right: 3vw;
 }
 
 .nav a {
     text-decoration: none;
     color: black;
-    font-size: 3.1vh;
+    font-size: 2.8vh;
     transition: color 0.2s;
 }
 
@@ -132,7 +132,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #217542; 
+    background-color: darkgreen; 
 }
 
 
