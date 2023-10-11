@@ -29,55 +29,54 @@
 .res-border{  
     border:0px solid #FFFFFF;
     background-color:#fff;
-
+    width:34vw;
+    height: 28vw;
 }
 .inform{
     list-style:none;
-    margin-left:14%;
+    margin-left:18%;
     background-color:#fff;
+    
 }
 .inform li{
-    padding-top: 2vw;
+    padding-top: 1vw;
     background-color:#fff;
+    
 }
 .inform label{
     background-color:#fff;
 }
 .res-ID{
-    width: 320px;
-    height: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid black;
+    width: 22vw;
+    height: 3vw;
+    border : 2px solid rgb(98, 98, 98);
     background-color:#fff;
+    border-radius: 3px 6px 3px 6px;
+    text-rendering: auto;
 }
 .res-pw{
-    width: 315px;
-    height: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid black;
+    width: 22vw;
+    height: 3vw;
+    border : 2px solid rgb(98, 98, 98);
     background-color:#fff;
+    border-radius: 3px 6px 3px 6px;
+    text-rendering: auto;
 }
 .res-name{
-    width: 310px;
-    height: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid black;
+    width: 22vw;
+    height: 3vw;
+    border : 2px solid rgb(98, 98, 98);
     background-color:#fff;
+    border-radius: 3px 6px 3px 6px;
+    text-rendering: auto;
 }
 .res-pwok{
-    width: 280px;
-    height: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid black;
+    width: 22vw;
+    height: 3vw;
+    border : 2px solid rgb(98, 98, 98);
     background-color:#fff;
+    border-radius: 3px 6px 3px 6px;
+    text-rendering: auto;
     margin-top: 2vw;
 }
 
@@ -90,13 +89,12 @@
     float: left;
     margin-left: 25%;
     margin-top: 5px;
-    
+    font-size:1.1vw;
 }
 .add li a{
     background-color:#fff;
     text-decoration: none; 
     color: black;
-    
 }
 
 
@@ -104,9 +102,8 @@
 
 /*     버튼     */
 .res-btn{
-    margin-left: 20%;
-    margin-top: 20%;
-    border-radius: 20px;
+    margin-left: 18%;
+    margin-top: 18%;
     width:22svw;
     height: 3vw;
     background-color: #217542;

@@ -8,7 +8,7 @@
 }
 /*     위쪽 로고부분     */
 .login-logo {
-    margin-left:48%;
+    margin-left:49%;
     margin-top:5%;
   }
 .login-logo img{
@@ -31,49 +31,50 @@
 .login-border{  
     border:0px solid #FFFFFF;
     background-color:#fff;
+    width:34vw;
+    height: 30vw;
 
 }
 .inform{
     list-style:none;
-    margin-left:14%;
-    padding-top: 8%;
+    margin-left:18%;
+    padding-top: 20%;
     background-color:#fff;
 }
 .inform li{
-    padding-top: 5vw;
+    padding-top: 1vw;
     background-color:#fff;
 }
 .inform label{
     background-color:#fff;
 }
 .login-ID{
-    width: 320px;
-    height: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid black;
+    width: 22vw;
+    height: 3vw;
+    border : 2px solid rgb(98, 98, 98);
     background-color:#fff;
+    border-radius: 3px 6px 3px 6px;
+    text-rendering: auto;
 }
 .login-pw{
-    width: 320px;
-    height: 30px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid black;
+    width: 22vw;
+    height: 3vw;
+    border : 2px solid rgb(98, 98, 98);
     background-color:#fff;
+    border-radius: 3px 6px 3px 6px;
 }
 
 /*       add      */
+
 .add{
     list-style:none;
     background-color:#fff;
 }
 .add li{
     float: left;
-    margin-left: 22%;
+    margin-left: 23%;
     margin-top: 5px;
+    font-size:1.1vw;
     
 }
 .add li a{
@@ -88,12 +89,12 @@
 
 /*     버튼     */
 .login-btn{
-    margin-left: 20%;
-    margin-top: 20%;
-    border-radius: 20px;
-    width:22svw;
+    margin-left: 18%;
+    margin-top: 15%;
+    width:22vw;
     height: 3vw;
     background-color: #217542;
+    color:#FFF;
 }
 
 /*     공용푸터     */

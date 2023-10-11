@@ -240,10 +240,10 @@ address{
     margin: 0 6px;
     vertical-align: baseline;
 }
-.footer-text li{
+.footer-text .footer-li1 {
     float: left;
 }
-.section{
+.section{  
     padding-bottom: 110px;
 }
 /* 아이콘만 */
