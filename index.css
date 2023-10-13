@@ -216,41 +216,72 @@
 
 /* ----------- 푸터 ----------- */
 .footer {
-   width: 100%;
-    height: 110px;
-    bottom: 0px;
+
+    /*양쪽 여백 지정*/
+    width: 90%; /*여백 값 수정 가능*/
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    background-color: gray;
 }
-#wrap{
-    min-height: 100vh;
-    position:relative;
-    width:100%;
+
+.footer-list-box {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
-.footer-all{
-    margin-top: 100vh;
-    position: absolute; 
+
+
+
+.footer-list .naneng{
+    color:black;
+    padding-bottom: 2vw;
 }
-address{
-    display: block;
+
+.footer-list {
+    background-color: aqua;
 }
-.bar{
-    width: 1px;
-    height: 10px;
-    display: inline-block;
-    line-height: 10px;
-    margin: 0 6px;
-    vertical-align: baseline;
+
+.footer-list01 {
+    background-color: aqua;
 }
-.footer-text .footer-li1 {
-    float: left;
+.footer-list01 a{
+    color:black;
 }
-.section{  
-    padding-bottom: 110px;
+
+.footer-list02 {
+    background-color: aqua;
 }
-/* 아이콘만 */
-.footer-social li a{
-    text-decoration: none; 
-    color: black;
+.footer-list02 a {
+    color:black;
 }
-.footer-social i{
-    size:50vw;
+.footer-social {
+    background-color: aqua;
+}
+
+.footer-social ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer-social a {
+    padding-right: 10px;
+}
+
+
+
+.footer-list-box li {
+    list-style: none;
+}
+
+.footer-list-box a {
+    text-decoration: none;
+}
+
+.footer-list-maintext {
+    font-size: 1.5vw;
+    font-weight: bold;
 }
