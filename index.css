@@ -216,6 +216,7 @@
 
 /* ----------- 푸터 ----------- */
 .footer {
+<<<<<<< HEAD
     width: 100%;
     height: 0%;
     bottom: 0px;
@@ -229,4 +230,74 @@
 .footer-all {
     background-color: red;
     position: absolute;
+=======
+
+    /*양쪽 여백 지정*/
+    width: 90%; /*여백 값 수정 가능*/
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+    background-color: gray;
+}
+
+.footer-list-box {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.footer-list .naneng{
+    color:black;
+    padding-bottom: 2vw;
+}
+
+.footer-list {
+    background-color: aqua;
+}
+
+.footer-list01 {
+    background-color: aqua;
+}
+.footer-list01 a{
+    color:black;
+}
+
+.footer-list02 {
+    background-color: aqua;
+}
+.footer-list02 a {
+    color:black;
+}
+.footer-social {
+    background-color: aqua;
+}
+
+.footer-social ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer-social a {
+    padding-right: 10px;
+}
+
+
+
+.footer-list-box li {
+    list-style: none;
+}
+
+.footer-list-box a {
+    text-decoration: none;
+}
+
+.footer-list-maintext {
+    font-size: 1.5vw;
+    font-weight: bold;
+>>>>>>> 환석이의로그인
 }
