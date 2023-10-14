@@ -26,7 +26,7 @@
             <ul>
                 <li class="nav-text">
                     <a href="index.html">
-                        <img src="img/logo_refrigerator.png" width="80px" alt="logo-main">
+                        <img src="img/logo_refrigerator.png" width="70px" alt="logo-main">
                     </a>
                 </li>
                 <li class="nav-text01"><a href="menu.html">부탁해</a></li>
@@ -34,50 +34,109 @@
             </ul>
         </div>
 
+        <hr>
+
         <!-- 메인 박스 -->
         <div class="main">
-            <div class="box">
-                <form action="/ocr_pjt/uploadAndOcr" method="post" enctype="multipart/form-data">
-                    <p><a href="#"><input class="btn-upload" id="file" type="file" name="file" accept=".jpg, .jpeg, .png"></a>
-                    <br>
-                        <a href="#">
-                    <button class="w-btn w-btn-indigo" type="submit">
-                        영수증 스캔하기
-                    </button>
-                    </a></p>
-                  </form>
+
+            
+
+            <!-- ------------------- box02 -------------------- -->
+            <div class="main-form01">
+                <div class="box02">
+                    <p><a href="#">내 냉장고 보기</a></p>
+                </div>
             </div>
-            <div class="box01">
-                <p><a href="#">텍스트로 입력하기</a></p>
+           
+            <div class="main-form">
+
+                <p class="main-text">
+                    식품 등록하기
+                </p>
+                
+                <!-- ------------------- box -------------------- -->
+                <div class="box">
+                    <form class="box-form" action="/ocr_pjt/uploadAndOcr" method="post" enctype="multipart/form-data">
+                        <p>
+                            <!-- 업로드 버튼 -->
+                            <a href="#">
+                                <div class="upload-container">
+                                    <input type="file" id="file" accept=".jpg, .jpeg, .png" style="display: none;">
+                                    <label for="file" class="upload-button">
+                                        <i class="fas fa-cloud-upload-alt"></i> 이미지 업로드
+                                    </label>
+                                </div>
+                            </a><br>
+
+
+                            <!-- 서밋 버튼 -->
+                            <a href="#" class="box-btn">
+                                <button class="w-btn w-btn-indigo" type="submit">
+                                    영수증 스캔하기
+                                </button>
+                            </a>
+                        </p>
+                    </form>
+                </div>
+                
+
+                
+                <!-- ------------------- box01 -------------------- -->
+                <div class="box01">
+                    <p><a href="#">텍스트로 입력하기</a></p>
+                </div>
+
+                
+                <!-- ------------------- preview -------------------- -->
+                <div class="preview" >
+                    <img style="width: 20em;" id="image-preview" src="#">
+                    <p class="preview-text">이미지 미리보기</p>
+                </div>
             </div>
-            <div class="box02">
-                <p><a href="#">내 냉장고 보기</a></p>
-            </div>
+            
         </div>
 
+
         <!-- 푸터 sty.2 -->
-        <div class="bin-box01">
-            <footer class="footer">
-                <div class="footer-container">
-                    <div class="footer-social">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fas fa-n"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-list-bottom">
-                        <address class="footer-address">
-                            <p style="font-style: normal;">
-                                상호명: (주) 나만의 냉장고 | 공동대표: 이영선, 김종범, 최환석, 양홍섭 <br>
-                                사업자 등록번호: 103-xx-xxxxx | 본사: 인천광역시 연수구 송도교육로 111번길 15
-                            </p>
-                        </address>
-                    </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-n"></i></a></li>
+                    </ul>
                 </div>
-            </footer>
-        </div>
+                <div class="footer-list-bottom">
+                    <address class="footer-address">
+                        <p style="font-style: normal;">
+                            상호명: (주) 나만의 냉장고 | 공동대표: 이영선, 김종범, 최환석, 양홍섭 <br>
+                            사업자 등록번호: 103-xx-xxxxx | 본사: 인천광역시 연수구 송도교육로 111번길 15
+                        </p>
+                    </address>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
+
+<script>
+    const imageUpload = document.getElementById('file');
+    const imagePreview = document.getElementById('image-preview');
+
+    imageUpload.addEventListener('change', function () {
+        if (this.files && this.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                imagePreview.src = e.target.result;
+            };
+
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+</script>
+
+
 </html>
