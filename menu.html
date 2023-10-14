@@ -37,7 +37,15 @@
         <!-- 메인 박스 -->
         <div class="main">
             <div class="box">
-                <p><a href="#">영수증 스캔하기</a></p>
+                <form action="/ocr_pjt/uploadAndOcr" method="post" enctype="multipart/form-data">
+                    <p><a href="#"><input class="btn-upload" id="file" type="file" name="file" accept=".jpg, .jpeg, .png"></a>
+                    <br>
+                        <a href="#">
+                    <button class="w-btn w-btn-indigo" type="submit">
+                        영수증 스캔하기
+                    </button>
+                    </a></p>
+                  </form>
             </div>
             <div class="box01">
                 <p><a href="#">텍스트로 입력하기</a></p>

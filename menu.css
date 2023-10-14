@@ -109,7 +109,44 @@
 
     border-radius: 30px 10px 10px;
 }
+button {
+    margin: 10px;
+}
+.w-btn {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgba(189, 189, 189, 0.1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
 
+}
+.w-btn-indigo {
+
+    color: #1e6b7b;
+}
+
+
+.btn-upload {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid rgb(77,77,77);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgb(77,77,77);
+      color: #fff;
+    }
+  }
+  
 
 /* ---------- box01 --------- */
 .box01 {
